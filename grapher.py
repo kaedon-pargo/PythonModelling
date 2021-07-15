@@ -1,5 +1,5 @@
 import numpy as np
-import scipy.optimize.curve_fit as curve_fit
+from scipy.optimize import curve_fit
 import matplotlib.pyplot as plt
 
 def linearData(n=100, m=2, c=5):
@@ -12,8 +12,8 @@ def linearData(n=100, m=2, c=5):
 
 	return x,y,f
 
-def linearFunction(m=2, c=5):
-	return lambda x: x*m +c
+def linearFunction(x, m=2, c=5):
+	return x*m +c
 
 def quadraticData(n=100, a=1,b=0,c=0):
 	x = np.arange(n)
@@ -26,8 +26,8 @@ def quadraticData(n=100, a=1,b=0,c=0):
 
 	return x,y,f
 
-def quadraticFunction(a=1,b=0,c=0):
-	return lambda x:a*x**2 + b*x + c
+def quadraticFunction(x, a=1,b=0,c=0):
+	return a*x**2 + b*x + c
 
 def randomArray(n=100, lower=0, upper=1):
 	x = np.random.rand(n)
