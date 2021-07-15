@@ -47,7 +47,7 @@ def sinData(n=100, a=1, b=1, c=0):
 	return x,y,f
 
 def sinFunction(x, a=1, b=1, c=0):
-	return a*np.sin(a*x + c)
+	return a*np.sin(b*x + c)
 
 def generateNoiseyData(x, f):
 	y = f(x)
