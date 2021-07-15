@@ -2,6 +2,10 @@ import numpy as np
 from scipy.optimize import curve_fit
 import matplotlib.pyplot as plt
 
+# To anyone reading this... :)
+import warnings
+warnings.filterwarnings("ignore")
+
 def linearData(n=100, m=2, c=5):
 	x = np.arange(n)
 	
