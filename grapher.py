@@ -36,7 +36,7 @@ def sinData(n=100, a=1, b=1, c=0):
 	y = a*np.sin(b*x + c)
 
 	y = randomArray(n,0.8,1.2)*y
-	y = y + randomArray(n, -10, 10)
+	y = y + randomArray(n, -0.1, 0.1)
 
 	f = lambda x: a*np.sin(b*x + c)
 
